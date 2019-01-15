@@ -1,0 +1,28 @@
+language: java
+
+addons:
+  apt:
+    packages:
+    - ghostscript
+
+
+
+# before_install:
+#  - ./setup-env.sh
+
+jdk:
+ - oraclejdk8
+
+cache:
+  directories:
+  - $HOME/.m2/repository/
+  - $HOME/.rvm 
+  - $HOME/.bundle
+
+script:
+- ./setup-env.sh
+- ./render-book-artifacts.sh
+
+env:
+- SPRING_PROFILES_ACTIVE=ci
+
