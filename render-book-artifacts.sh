@@ -12,7 +12,7 @@ fi
 
 echo "the book clone will be at ${BOOK_CHECKOUT}"
 
-URI=https://${SB_GITHUB_TOKEN}@github.com/soteria-book/soteria-book.git 
+URI=https://${SB_GITHUB_TOKEN}@github.com/soteria-book/soteria-book.git
 
 if [ ! -d $BOOK_CHECKOUT ] ; then 
 	msg="cloned the http://github.com/soteria-book/soteria-book into ${BOOK_CHECKOUT}.."
