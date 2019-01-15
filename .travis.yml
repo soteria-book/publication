@@ -20,8 +20,9 @@ cache:
   - $HOME/.bundle
 
 script:
-- ./setup-env.sh
-- ./render-book-artifacts.sh
+# - ./setup-env.sh
+# - ./render-book-artifacts.sh
+- ./clone.sh
 
 env:
 - SPRING_PROFILES_ACTIVE=ci
